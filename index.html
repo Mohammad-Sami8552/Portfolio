@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Sami Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="name">Mohammad Sami</div>
+            <ul class="u">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="firstsection">
+            <div class="left">
+                <p>
+                    Hi! This is <span class="spa">Mohammad Sami</span>,<br>
+                    I am <span id="element"></span><br>
+                    I am passionate about creating amazing digital experiences.
+                </p>
+            </div>
+            <img src="./developer.jpg" alt="Developer Image" width="30%">
+        </section>
+
+        <section id="experience" class="pastexperience">
+            <div class="p1">Experience</div>
+            <div class="statements">
+                <ul>
+                    <li>
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Development</h3>
+                        <p>Developed multiple Android applications using Java and Kotlin</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Game Development</h3>
+                        <p>Created engaging games including Rock Paper Scissors and Breakout</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Built responsive and interactive web applications</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-cube"></i>
+                        <h3>3D Modeling</h3>
+                        <p>Designed and created 3D models for various projects</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="p1">Projects</div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Android App</h3>
+                    <p>A feature-rich Android application built with modern technologies</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <h3>Rock Paper Scissors</h3>
+                    <p>An interactive game built with JavaScript</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <h3>Unity Game</h3>
+                    <p>An immersive 3D game developed using Unity</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="p1">Get In Touch</div>
+            <p>Feel free to reach out for collaborations or just a friendly hello</p>
+            <div class="social-links">
+                <a href="https://github.com/Mohammad-Sami8552"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohammad-sami-6121252b9/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/mohammadHighP"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:your.mohammadsami8552@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="index.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Game Developer', '3D Modeller', 'App Developer'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+</html>
