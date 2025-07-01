@@ -12,7 +12,8 @@
     <header>
         <nav>
             <div class="name">Mohammad Sami</div>
-            <ul class="u">
+            <button class="hamburger" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <ul class="u" id="mainNav">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -30,7 +31,7 @@
                     I am passionate about creating amazing digital experiences.
                 </p>
             </div>
-            <img src="./developer.jpg" alt="Developer Image" width="30%">
+            <img src="./developer.png" alt="Developer Image" width="20%">
         </section>
 
         <section id="experience" class="pastexperience">
@@ -67,17 +68,17 @@
                 <div class="project-card">
                     <h3>Android App</h3>
                     <p>A feature-rich Android application built with modern technologies</p>
-                    <a href="#" class="btn">Learn More</a>
+                    <a href="#" class="btn">Check Here</a>
                 </div>
                 <div class="project-card">
                     <h3>Rock Paper Scissors</h3>
                     <p>An interactive game built with JavaScript</p>
-                    <a href="#" class="btn">Learn More</a>
+                    <a href="https://mohammad-sami8552.github.io/Scissor_Paper_Game/" class="btn">Check Here</a>
                 </div>
                 <div class="project-card">
                     <h3>Unity Game</h3>
                     <p>An immersive 3D game developed using Unity</p>
-                    <a href="#" class="btn">Learn More</a>
+                    <a href="https://mohammad-sami8552.github.io/Balloon_Game/" class="btn">Check Here</a>
                 </div>
             </div>
         </section>
@@ -89,8 +90,14 @@
                 <a href="https://github.com/Mohammad-Sami8552"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/mohammad-sami-6121252b9/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://x.com/mohammadHighP"><i class="fab fa-twitter"></i></a>
-                <a href="mailto:your.mohammadsami8552@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/xzzgokra" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="formStatus"></div>
         </section>
     </main>
 
@@ -106,3 +113,4 @@
     </script>
 </body>
 </html>
+
